@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar styling */
+/* ... (your existing navbar styles) ... */
+
+/* About section styling */
+.about {
+  padding-top: 60px; /* Adjust as needed */
+  background-color: wheat;
+}
+
+.head {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.head h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#span {
+  border-bottom: 5px solid gold;
+  padding-bottom: 3px;
+}
+
+.para {
+  padding: 20px;
+  color: grey;
+  text-align: justify; /* Align text to justify for better readability */
+}
+
+/* Footer section styling */
+.footer {
+  padding: 2rem 0;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer-links a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-text {
+  margin-top: 1rem;
+  color: blue;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 10px;
+    border-bottom: 5px solid greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .hambar {
+    display: none;
+  }
+
+  .home {
+    display: block;
+  }
+
+  .home li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .home a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .home a:hover {
+    color: rgb(218, 218, 39);
+  }
+
+  /* Adjustments to other styles as needed */
+}

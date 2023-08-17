@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* start of navbarr styling */
+/* Set the width of the sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Set the style of the sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  font-size: 18px;
+  color: blue;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  color: pink;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+/* Set the style of the hamburger icon */
+.fa-bars {
+  font-size: 30px;
+  color: blue;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Shift the content to the right when the sidebar is visible */
+.shifted-content {
+  transition: margin-left 0.5s;
+  margin-left: 200px;
+}
+.sidebar.active {
+  width: 200px;
+}
+.shifted-content.active {
+  margin-left: 200px;
+}
+
+.home {
+  display: none;
+}
+.navbar {
+  padding: 10px 10px;
+  border: 5px solid yellowgreen;
+}
+.navcont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.hambar {
+  justify-self: end;
+  padding-right: 10px;
+  /* padding-top: 10px; */
+  color: black;
+}
+.home {
+  display: none;
+}
+@media screen and (min-width: 786px) {
+  .hambar i {
+    display: none;
+  }
+
+  .home {
+    display: block;
+  }
+  .home li {
+    display: inline-block;
+  }
+  .home a {
+    text-decoration: none;
+    padding: 5px;
+  }
+  .home a:hover {
+    color: rgb(218, 218, 39);
+    /* transform: scale(2); */
+  }
+}
+/* contact section styling  */
+.contact {
+  height: calc(94vh - 58px);
+  background: bisque;
+}
+.cont h1 {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
+#span {
+  border-bottom: 5px solid goldenrod;
+  padding-bottom: 5px;
+}
+.conti {
+  position: relative;
+  padding-top: 30px;
+}
+.conti p {
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2;
+  color: gray;
+
+  padding-left: 40px;
+}
+.conti a {
+  color: goldenrod;
+}
+/* footer section */
+.footer {
+  padding: 2rem 3rem;
+  background: blanchedalmond;
+  color: blue;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.footer ul a {
+  color: black;
+  font-size: 1.5rem;
+}
